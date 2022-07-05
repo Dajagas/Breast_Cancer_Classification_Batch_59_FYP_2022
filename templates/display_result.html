@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{%block title%} Result {%endblock%}
+
+{%block content%}
+
+{% if prediction %}
+  <img src="{{ url_for('static',filename='display.jpeg') }} " height="400px" width="400px">
+  <img src="{{ url_for('static',filename='preprocessed.jpeg') }} " height="400px" width="400px">
+	<h2> Your Prediction   : <i> {{prediction}} </i></h2>
+
+	{% endif %}
+
+
+{%endblock%}
